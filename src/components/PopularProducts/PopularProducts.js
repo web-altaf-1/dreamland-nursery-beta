@@ -1,10 +1,12 @@
+import Link from 'next/link';
 import React from 'react';
 
 const PopularProducts = () => {
     const productData = [
         {
             id: 1,
-            image: 'https://bangladeshagriculturenursery.com/wp-content/uploads/2024/10/coffea-arabica-variegated-2.webp',
+            slug: "/product/test-product",
+            image: '/images/products/product1.webp',
             category: 'FRUIT TREES',
             name: 'Mammoth Custard Apple',
             originalPrice: 850.00,
@@ -12,7 +14,8 @@ const PopularProducts = () => {
         },
         {
             id: 2,
-            image: 'https://bangladeshagriculturenursery.com/wp-content/uploads/2024/09/461302026_569302078763297_469327-1.webp',
+            slug: "/product/test-product",
+            image: '/images/products/product1.webp',
             category: 'FRUIT TREES',
             name: 'Mammoth Custard Apple',
             originalPrice: 850.00,
@@ -20,7 +23,8 @@ const PopularProducts = () => {
         },
         {
             id: 3,
-            image: 'https://bangladeshagriculturenursery.com/wp-content/uploads/2024/07/Kazi-Peyara-1-800x800.webp',
+            slug: "/product/test-product",
+            image: '/images/products/product1.webp',
             category: 'FRUIT TREES',
             name: 'Mammoth Custard Apple',
             originalPrice: 850.00,
@@ -28,7 +32,8 @@ const PopularProducts = () => {
         },
         {
             id: 4,
-            image: 'https://bangladeshagriculturenursery.com/wp-content/uploads/2024/07/Kazi-Peyara-1-800x800.webp',
+            slug: "/product/test-product",
+            image: '/images/products/product1.webp',
             category: 'FRUIT TREES',
             name: 'Mammoth Custard Apple',
             originalPrice: 850.00,
@@ -36,7 +41,8 @@ const PopularProducts = () => {
         },
         {
             id: 5,
-            image: 'https://bangladeshagriculturenursery.com/wp-content/uploads/2024/07/Kazi-Peyara-1-800x800.webp',
+            slug: "/product/test-product",
+            image: '/images/products/product1.webp',
             category: 'FRUIT TREES',
             name: 'Mammoth Custard Apple',
             originalPrice: 850.00,
@@ -44,7 +50,8 @@ const PopularProducts = () => {
         },
         {
             id: 6,
-            image: 'https://bangladeshagriculturenursery.com/wp-content/uploads/2024/07/Kazi-Peyara-1-800x800.webp',
+            slug: "/product/test-product",
+            image: '/images/products/product1.webp',
             category: 'FRUIT TREES',
             name: 'Mammoth Custard Apple',
             originalPrice: 850.00,
@@ -52,7 +59,8 @@ const PopularProducts = () => {
         },
         {
             id: 7,
-            image: 'https://bangladeshagriculturenursery.com/wp-content/uploads/2024/07/Kazi-Peyara-1-800x800.webp',
+            slug: "/product/test-product",
+            image: '/images/products/product1.webp',
             category: 'FRUIT TREES',
             name: 'Mammoth Custard Apple',
             originalPrice: 850.00,
@@ -60,7 +68,8 @@ const PopularProducts = () => {
         },
         {
             id: 8,
-            image: 'https://bangladeshagriculturenursery.com/wp-content/uploads/2024/07/Kauka-Wilder-4.webp',
+            slug: "/product/test-product",
+            image: '/images/products/product1.webp',
             category: 'FRUIT TREES',
             name: 'Mammoth Custard Apple',
             originalPrice: 850.00,
@@ -73,11 +82,14 @@ const PopularProducts = () => {
 
             <div class="all-nursery-products grid lg:grid-cols-4 grid-cols-1 mt-6 mx-8">
                 {productData?.map(product => (
-                    <div key={product?.id} className="single-product p-3 hover:shadow-2xl rounded-lg">
-                        <img src={product?.image} alt={product?.name} />
+                    <div key={product?.id} className="cursor-pointer single-product p-3 hover:shadow-2xl rounded-lg ">
+                        <Link href={product?.slug}><img src={product?.image} alt={product?.name} /></Link>
                         <div className="single-product-details mt-2">
                             <h5 className="text-sm">{product?.category}</h5>
-                            <h2 className="text-lg font-semibold font-inter">{product?.name}</h2>
+                            <Link href={product?.slug} >
+                                <h2 className="text-lg font-semibold font-inter">{product?.name}</h2>
+                            </Link>
+
                             <span>
                                 <del className="text-sm">৳ {product?.originalPrice?.toFixed(2)}</del> ৳ {product?.discountedPrice?.toFixed(2)}
                             </span>

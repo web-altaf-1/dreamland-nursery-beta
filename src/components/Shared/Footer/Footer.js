@@ -131,7 +131,7 @@ const Footer = () => {
                                 <div class="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
                                     <a class="mr-3 lg:mr-12 xl:mr-12" rel="noreferrer" href="/">
                                         <div class="relative h-10 flex items-center gap-2">
-                                            <img alt="logo" width="40" height="40" class="" src="/images/logo-1.png"
+                                            <img alt="logo" width="40" height="40" className="rounded-full" src="/images/dreamland.webp"
                                                 style={{ color: 'transparent' }} />
                                             <h3 class="text-xl font-bold font-sans uppercase">Dreamland Nursery</h3>
                                         </div>
@@ -140,7 +140,7 @@ const Footer = () => {
                                         <span> Address: 234 Address, Kolkata, India.</span><br />
                                         <span class="font-bn-pro"> Mobile: <a href="">+966 123 145</a></span><br />
                                         <span class="font-bn-pro"> Email: <a class="text-emerald-700"
-                                            href="">admin@dreamlandnursery.com</a></span>
+                                            href="">email@dreamland.com</a></span>
                                     </p>
                                 </div>
                             </div>
@@ -243,9 +243,9 @@ const Footer = () => {
                                 Copyright
                                 2024
                                 @
-                                <a target="_blank" rel="noopener noreferrer" class="text-emerald-500" href="/">Dreamland
+                                <a target="_blank" rel="noopener noreferrer" class="text-emerald-500 me-1" href="/">Dreamland
                                     Nursery
-                                    BD</a>
+                                </a>
                                 All rights reserved.
                             </p>
                         </div>

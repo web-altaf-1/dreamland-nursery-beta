@@ -1,4 +1,7 @@
+import ProductDescription from '@/components/ProductDetails/ProductDescription';
 import ProductDetailsAddToCart from '@/components/ProductDetails/ProductDetailsAddToCart';
+import ProductDetailsRelatedProduct from '@/components/ProductDetails/ProductDetailsRelatedProduct';
+import Footer from '@/components/Shared/Footer/Footer';
 import Header from '@/components/Shared/Header/Header';
 import React from 'react';
 
@@ -52,13 +55,13 @@ const page = () => {
         <div>
             <Header></Header>
             <div className='nursery-products container mx-auto border-b	pb-12'>
-                <div className='mx-8'>
+                <div className='lg:mx-8 mx-1'>
                     <p>Home / Flower Trees / Kauka Wilder</p>
-                    <div className='flex gap-4'>
-                        <div className='w-1/2 p-4'>
+                    <div className='lg:flex flex flex-col lg:flex-row gap-4'>
+                        <div className='lg:w-1/2 w-full p-4'>
                             <img src={productDetails?.photo} alt="" />
                         </div>
-                        <div className='w-1/2 p-4'>
+                        <div className='lg:w-1/2 w-full p-4'>
                             <h1 className='text-3xl'>{productDetails?.name} </h1>
                             <h6 className='text-2xl'>৳ {productDetails?.price} </h6>
                             <p className='my-3'>{productDetails?.description}</p>
@@ -74,8 +77,15 @@ const page = () => {
                             <ProductDetailsAddToCart productDetails={productDetails}></ProductDetailsAddToCart>
                         </div>
                     </div>
+
+
+
+                    <ProductDescription></ProductDescription>
+
+                    <ProductDetailsRelatedProduct />
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };

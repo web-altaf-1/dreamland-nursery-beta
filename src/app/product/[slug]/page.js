@@ -5,21 +5,24 @@ import Footer from '@/components/Shared/Footer/Footer';
 import Header from '@/components/Shared/Header/Header';
 import React from 'react';
 
-const fetchProductDetails = async (slug) => {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/products/${slug}`, {
+const fetchProducts = async () => {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/data.json`, {
         cache: 'no-cache'
     });
     if (!response.ok) {
-        throw new Error("Failed to fetch product details");
+        throw new Error("Failed to fetch products");
     }
     return response.json();
 };
 
+
 const page = async ({ params }) => {
     const slug = params?.slug
 
+    const products = await fetchProducts();
+    const product = products?.find(product => product?.slug === slug)
 
-    const productDetails = await fetchProductDetails(slug);
+    const productDetails = product;
     return (
         <div>
             <Header></Header>

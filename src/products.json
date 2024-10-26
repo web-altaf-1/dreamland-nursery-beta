@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "slug": "/product/test-product1",
+        "image": "/images/products/1.jpg",
+        "category": "FRUIT TREES",
+        "name": "Mammoth Custard Apple",
+        "originalPrice": 850.00,
+        "discountedPrice": 800.00
+    },
+    {
+        "id": 2,
+        "slug": "/product/test-product2",
+        "image": "/images/products/2.jpg",
+        "category": "FRUIT TREES",
+        "name": "Mammoth Custard Apple",
+        "originalPrice": 850.00,
+        "discountedPrice": 800.00
+    },
+    {
+        "id": 3,
+        "slug": "/product/test-product3",
+        "image": "/images/products/3.jpg",
+        "category": "FRUIT TREES",
+        "name": "Mammoth Custard Apple",
+        "originalPrice": 850.00,
+        "discountedPrice": 800.00
+    },
+    {
+        "id": 4,
+        "slug": "/product/test-product4",
+        "image": "/images/products/4.jpg",
+        "category": "FRUIT TREES",
+        "name": "Mammoth Custard Apple",
+        "originalPrice": 850.00,
+        "discountedPrice": 800.00
+    },
+    {
+        "id": 5,
+        "slug": "/product/test-product5",
+        "image": "/images/products/5.jpg",
+        "category": "FRUIT TREES",
+        "name": "Mammoth Custard Apple",
+        "originalPrice": 850.00,
+        "discountedPrice": 800.00
+    },
+    {
+        "id": 6,
+        "slug": "/product/test-product6",
+        "image": "/images/products/6.jpg",
+        "category": "FRUIT TREES",
+        "name": "Mammoth Custard Apple",
+        "originalPrice": 850.00,
+        "discountedPrice": 800.00
+    },
+    {
+        "id": 7,
+        "slug": "/product/test-product7",
+        "image": "/images/products/7.jpg",
+        "category": "FRUIT TREES",
+        "name": "Mammoth Custard Apple",
+        "originalPrice": 850.00,
+        "discountedPrice": 800.00
+    },
+    {
+        "id": 8,
+        "slug": "/product/test-product8",
+        "image": "/images/products/8.jpg",
+        "category": "FRUIT TREES",
+        "name": "Mammoth Custard Apple",
+        "originalPrice": 850.00,
+        "discountedPrice": 800.00
+    },
+    {
+        "id": 9,
+        "slug": "/product/test-product9",
+        "image": "/images/products/9.jpg",
+        "category": "FRUIT TREES",
+        "name": "Mammoth Custard Apple",
+        "originalPrice": 850.00,
+        "discountedPrice": 800.00
+    },
+    {
+        "id": 10,
+        "slug": "/product/test-product10",
+        "image": "/images/products/10.jpg",
+        "category": "FRUIT TREES",
+        "name": "Mammoth Custard Apple",
+        "originalPrice": 850.00,
+        "discountedPrice": 800.00
+    },
+    {
+        "id": 11,
+        "slug": "/product/test-product11",
+        "image": "/images/products/11.jpg",
+        "category": "FRUIT TREES",
+        "name": "Mammoth Custard Apple",
+        "originalPrice": 850.00,
+        "discountedPrice": 800.00
+    },
+    {
+        "id": 12,
+        "slug": "/product/test-product12",
+        "image": "/images/products/12.jpg",
+        "category": "FRUIT TREES",
+        "name": "Mammoth Custard Apple",
+        "originalPrice": 850.00,
+        "discountedPrice": 800.00
+    },
+    {
+        "id": 13,
+        "slug": "/product/test-product13",
+        "image": "/images/products/13.jpg",
+        "category": "FRUIT TREES",
+        "name": "Mammoth Custard Apple",
+        "originalPrice": 850.00,
+        "discountedPrice": 800.00
+    },
+    {
+        "id": 14,
+        "slug": "/product/test-product14",
+        "image": "/images/products/14.jpg",
+        "category": "FRUIT TREES",
+        "name": "Mammoth Custard Apple",
+        "originalPrice": 850.00,
+        "discountedPrice": 800.00
+    },
+    {
+        "id": 15,
+        "slug": "/product/test-product15",
+        "image": "/images/products/15.jpg",
+        "category": "FRUIT TREES",
+        "name": "Mammoth Custard Apple",
+        "originalPrice": 850.00,
+        "discountedPrice": 800.00
+    },
+    {
+        "id": 16,
+        "slug": "/product/test-product16",
+        "image": "/images/products/16.jpg",
+        "category": "FRUIT TREES",
+        "name": "Mammoth Custard Apple",
+        "originalPrice": 850.00,
+        "discountedPrice": 800.00
+    }
+]

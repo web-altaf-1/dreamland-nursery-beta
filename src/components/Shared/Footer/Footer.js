@@ -9,7 +9,7 @@ const Footer = () => {
                         <div class="border-r border-gray-200 py-1 flex items-center justify-center bg-white">
                             <div class="mr-3">
                                 <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
-                                    stroke-linecap="round" stroke-linejoin="round"
+                                    strokeLinecap="round" strokeLinejoin="round"
                                     class="flex-shrink-0 h-4 w-4 text-emerald-600" aria-hidden="true" height="1em"
                                     width="1em" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="1" y="3" width="15" height="13"></rect>
@@ -24,7 +24,7 @@ const Footer = () => {
                         <div class="border-r border-gray-200 py-1 flex items-center justify-center bg-white">
                             <div class="mr-3">
                                 <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
-                                    stroke-linecap="round" stroke-linejoin="round"
+                                    strokeLinecap="round" strokeLinejoin="round"
                                     class="flex-shrink-0 h-4 w-4 text-emerald-600" aria-hidden="true" height="1em"
                                     width="1em" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -39,7 +39,7 @@ const Footer = () => {
                         <div class="border-r border-gray-200 py-1 flex items-center justify-center bg-white">
                             <div class="mr-3">
                                 <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
-                                    stroke-linecap="round" stroke-linejoin="round"
+                                    strokeLinecap="round" strokeLinejoin="round"
                                     class="flex-shrink-0 h-4 w-4 text-emerald-600" aria-hidden="true" height="1em"
                                     width="1em" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
@@ -52,7 +52,7 @@ const Footer = () => {
                         <div class="border-r border-gray-200 py-1 flex items-center justify-center bg-white">
                             <div class="mr-3">
                                 <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
-                                    stroke-linecap="round" stroke-linejoin="round"
+                                    strokeLinecap="round" strokeLinejoin="round"
                                     class="flex-shrink-0 h-4 w-4 text-emerald-600" aria-hidden="true" height="1em"
                                     width="1em" xmlns="http://www.w3.org/2000/svg">
                                     <polyline points="20 12 20 22 4 22 4 12"></polyline>

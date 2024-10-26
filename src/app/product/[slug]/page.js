@@ -5,52 +5,21 @@ import Footer from '@/components/Shared/Footer/Footer';
 import Header from '@/components/Shared/Header/Header';
 import React from 'react';
 
-const page = () => {
-    const productDetails = {
-        id: 142,
-        name: "Kauka Wilder",
-        photo: "/images/products/product1.webp",
-        price: 550,
-        description: "Kauka Wilder aka Doctor Wilder, Fire Star, not Solar Flare, not Teresa Wilder, Aussie Dreaming, Oz Tequila Sunrise. #142 1978 3″ pink and orange, grainy and veined with fruity fragrance. An early, easy blooming red streaked with strong yellow, on narrow, pointed petals. Unusually nice spicy fragrance. Strong reddish-yellow with a large bright yellow center, wide moderate red band on back. Petals are narrow and elliptical with pointed tips and slightly overlapping. 3”, strong sweet fragrance.",
-        dimensions: {
-            height: "1.5′ – 2′",
-            nurseryTreeSize: "2.5″"
-        },
-        sunlight: "Medium Light with mostly indirect light",
-        delivery: {
-            dhaka: {
-                description: "Dhaka Plant Delivery Van",
-                price: 100,
-                region: "Dhaka City"
-            },
-            worldwide: {
-                description: "NYC Plant Delivery Van",
-                price: 100,
-                region: "Worldwide",
-                currency: "USD"
-            }
-        },
-        availability: {
-            stock: 988,
-            replacementPolicy: "Replacement Guaranteed",
-            replacementDetails: "দুই মাসের মধ্যে আমাদের কোন গাছ মারা গেলে বা কোন ধরনের ক্ষতিগ্রস্ত হলেও রিপ্লেস করে দেওয়া হয়",
-        },
-        categories: ["Home", "Flower Trees"],
-        policies: {
-            returnPolicy: "Final Sale Only",
-            exchangePolicy: "Return & Exchange Policy"
-        },
-        features: {
-            size: "3″",
-            fragrance: "Strong sweet fragrance",
-            color: "Strong reddish-yellow with a large bright yellow center",
-            petalDetails: "Narrow, elliptical with pointed tips and slightly overlapping",
-            extraDetails: "Red streaked with strong yellow"
-        },
-        reviews: [],
-        additionalInfo: "কাঠগোলাপ দেশের ছোট-বড় সবার কাছে পরিচিত ফুল। পাতা আকারে বেশ বড় ও পুরু। শিরা-উপশিরা স্পষ্ট।",
-    };
+const fetchProductDetails = async (slug) => {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/products/${slug}`, {
+        cache: 'no-cache'
+    });
+    if (!response.ok) {
+        throw new Error("Failed to fetch product details");
+    }
+    return response.json();
+};
 
+const page = async ({ params }) => {
+    const slug = params?.slug
+
+
+    const productDetails = await fetchProductDetails(slug);
     return (
         <div>
             <Header></Header>
@@ -59,7 +28,7 @@ const page = () => {
                     <p>Home / Flower Trees / Kauka Wilder</p>
                     <div className='lg:flex flex flex-col lg:flex-row gap-4'>
                         <div className='lg:w-1/2 w-full p-4'>
-                            <img src={productDetails?.photo} alt="" />
+                            <img src={productDetails?.image} alt="" />
                         </div>
                         <div className='lg:w-1/2 w-full p-4'>
                             <h1 className='text-3xl'>{productDetails?.name} </h1>

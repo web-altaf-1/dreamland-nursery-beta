@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script src="https://kit.fontawesome.com/a3939c0da5.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a3939c0da5.js" crossOrigin="anonymous"></script>
       </head>
       <body
 

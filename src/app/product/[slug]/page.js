@@ -25,15 +25,15 @@ const page = async ({ params }) => {
             <Header></Header>
             <div className='nursery-products container mx-auto border-b	pb-12'>
                 <div className='lg:mx-8 mx-1'>
-                    <p>Home / Flower Trees / Kauka Wilder</p>
+                    <p>Home / Flower Trees / {productDetails?.name}</p>
                     <div className='lg:flex flex flex-col lg:flex-row gap-4'>
                         <div className='lg:w-1/2 w-full p-4'>
                             <img src={productDetails?.image} alt="" />
                         </div>
                         <div className='lg:w-1/2 w-full p-4'>
                             <h1 className='text-3xl'>{productDetails?.name} </h1>
-                            <h6 className='text-2xl'>৳ {productDetails?.price} </h6>
-                            <p className='my-3'>{productDetails?.description}</p>
+                            <h6 className='text-2xl'>৳ {productDetails?.discountedPrice} </h6>
+                            <p className='my-3'>{productDetails?.description ? productDetails?.description : "Kauka Wilder aka Doctor Wilder, Fire Star, not Solar Flare, not Teresa Wilder, Aussie Dreaming, Oz Tequila Sunrise. #142 1978 3″ pink and orange, grainy and veined with fruity fragrance. An early, easy blooming red streaked with strong yellow, on narrow, pointed petals. Unusually nice spicy fragrance. Strong reddish-yellow with a large bright yellow center, wide moderate red band on back. Petals are narrow and elliptical with pointed tips and slightly overlapping. 3”, strong sweet fragrance. "}</p>
                             <p>Stands 1.5′ – 2′ tall. Nursery Trees is 2.5″</p>
                             <p>Ready mix soil is completely prepared soil. </p>
                             <p>Local delivery in the Mumbai City area from 100 INR.</p>

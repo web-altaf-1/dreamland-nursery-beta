@@ -13,8 +13,7 @@ const fetchProducts = async () => {
 
 
 const DiscountProducts = async () => {
-    // const productData = await fetchProducts();
-    const productData = []
+    const productData = await fetchProducts();
     return (
         <section className="nursery-products container mx-auto border-b border-t pb-12 mt-20">
             <h2 className="text-3xl font-semibold text-center pt-8">Discount Products</h2>

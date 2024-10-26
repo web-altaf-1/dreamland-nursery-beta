@@ -19,10 +19,10 @@ const fetchProducts = async () => {
 const page = async ({ params }) => {
     const slug = params?.slug
 
-    // const products = await fetchProducts();
-    // const product = products?.find(product => product?.slug === slug)
+    const products = await fetchProducts();
+    const product = products?.find(product => product?.slug === slug)
 
-    const productDetails = {};
+    const productDetails = product;
     return (
         <div>
             <Header></Header>

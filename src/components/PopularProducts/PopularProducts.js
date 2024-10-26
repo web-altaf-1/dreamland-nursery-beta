@@ -12,8 +12,7 @@ const fetchProducts = async () => {
 };
 
 const PopularProducts = async () => {
-    // const productData = await fetchProducts();
-    const productData = []
+    const productData = await fetchProducts();
 
     return (
         <section class="nursery-products container mx-auto border-b	pb-12">

@@ -11,12 +11,12 @@ const fetchProducts = async () => {
     return response.json();
 };
 
-const PopularProducts = async () => {
+const PopularProducts = async ({ isHomePage = false }) => {
     const productData = await fetchProducts();
 
     return (
-        <section class="nursery-products container mx-auto border-b	pb-12">
-            <h2 class="text-3xl font-semibold text-center">Popular Products</h2>
+        <section class={`nursery-products container mx-auto ${isHomePage && 'border-b'} pb-12`}>
+            <h2 class="text-3xl font-semibold text-center my-5">Popular Products</h2>
 
             <div class="all-nursery-products grid lg:grid-cols-4 grid-cols-1 mt-6 mx-8">
                 {productData?.slice(0, 8).map(product => (

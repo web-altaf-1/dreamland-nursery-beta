@@ -12,10 +12,10 @@ const fetchProducts = async () => {
 };
 
 
-const DiscountProducts = async () => {
+const DiscountProducts = async ({ isHomePage = false }) => {
     const productData = await fetchProducts();
     return (
-        <section className="nursery-products container mx-auto border-b border-t pb-12 mt-20">
+        <section className={`nursery-products container mx-auto ${isHomePage && 'border-b border-t'} pb-12 mt-20`}>
             <h2 className="text-3xl font-semibold text-center pt-8">Discount Products</h2>
 
             <div className="all-nursery-products grid lg:grid-cols-4 grid-cols-1 mt-6 mx-8 gap-3">

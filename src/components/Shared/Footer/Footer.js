@@ -130,7 +130,7 @@ const Footer = () => {
                                 </div>
                                 <div class="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
                                     <a class="mr-3 lg:mr-12 xl:mr-12" rel="noreferrer" href="/">
-                                        <div class="relative h-10 flex items-center gap-2">
+                                        <div class="relative flex-wrap flex items-center gap-2">
                                             <img alt="logo" width="40" height="40" className="rounded-full" src="/images/dreamland.webp"
                                                 style={{ color: 'transparent' }} />
                                             <h3 class="text-xl font-bold font-sans uppercase">Dreamland Nursery</h3>

@@ -10,6 +10,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <script src="https://kit.fontawesome.com/a3939c0da5.js" crossOrigin="anonymous"></script>
+        <title>Dreamland Nursery</title>
       </head>
       <body
 

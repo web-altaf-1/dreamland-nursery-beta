@@ -45,7 +45,7 @@ const Header = () => {
                 <Link href="/about-us" class="cg-menu-link main-menu-link"><span>About Us</span></Link>
               </li>
               <li id="nav-menu-item-7267" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat">
-                <Link href="" class="cg-menu-link main-menu-link"><span>Contact Us</span></Link>
+                <Link href="/contact-us" class="cg-menu-link main-menu-link"><span>Contact Us</span></Link>
               </li>
               <li id="nav-menu-item-7268" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat">
                 <Link href="/why-us" class="cg-menu-link main-menu-link"><span>Why Us</span></Link>

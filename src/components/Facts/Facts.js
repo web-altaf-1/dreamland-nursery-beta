@@ -3,7 +3,7 @@ import React from 'react';
 const Facts = () => {
     return (
         <section class="container mx-auto">
-            <div class="grid lg:grid-cols-3 grid-cols-1 gap-3 lg:gap-7 lg:my-12 my-4 lg:mx-12 mx-4">
+            <div class="grid lg:grid-cols-3 grid-cols-1 gap-3 lg:gap-7 lg:my-12 my-2 lg:mx-12 mx-2">
                 <div class="gallery-item relative">
                     <div class="thumbnail gallery-img-home">
                         <img class="" src="/images/frutitres1.webp" alt="" />

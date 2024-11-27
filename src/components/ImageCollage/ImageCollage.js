@@ -107,7 +107,7 @@ const ImageCollage = ({ slug }) => {
     const category = imageCategories.find(category => category.slug === slug);
     return (
         <div>
-            <section className="gallery">
+            <section className="gallery p-3">
                 {category?.images?.map((url, index) => (
                     <div className="image" key={index}>
                         <img src={url} alt={`image-${index + 1}`} />

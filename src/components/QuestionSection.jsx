@@ -2,7 +2,7 @@ import React from 'react';
 
 const QuestionSection = () => {
     return (
-        <section className="py-20 bg-gray-100 my-12">
+        <section className="py-20 bg-gray-100 py-12">
             <div className="container mx-auto px-6 lg:px-20">
                 <div className="flex flex-col lg:flex-row items-center">
                     {/* Left Text Section */}

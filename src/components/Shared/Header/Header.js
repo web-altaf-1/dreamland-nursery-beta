@@ -31,11 +31,21 @@ const Header = () => {
 
       <div className={`${isSticky && "fixed w-full top-0 z-50"} transition-all duration-300 ease-in-out`}>
         <div class="flex items-center justify-between py-3 px-5 " style={{ backgroundColor: '#3d3d3d' }}>
-          <div class="ms-5 logo ">
-            <Link href="/">
+          <Link href="/">
+            <div class="ms-5 logo flex gap-3 items-center">
               <img class="header-logo w-16 rounded-full" src="/images/dreamland.webp" alt="" />
-            </Link>
-          </div>
+
+              <div class="text-end">
+                <h4 class="uppercase m-0 header-logo-heading fw-bolder text-white">Dreamland Nursery</h4>
+
+                <div class="flex items-center gap-1">
+                  <div class="left-hr-border">
+                  </div>
+                  <p class="header-logo-sub-heading">A Gardening Solutions Company.</p>
+                </div>
+              </div>
+            </div>
+          </Link>
           <div class="menu-primary-menu-container ">
             <ul class="menu flex text-white gap-5 p-3">
               <li id="nav-menu-item-7265" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat">

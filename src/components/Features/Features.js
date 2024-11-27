@@ -2,7 +2,7 @@ import React from 'react';
 
 const Features = () => {
     return (
-        <section class="pt-12 container mx-auto">
+        <section class="py-12 container mx-auto">
             <h2 class="text-4xl text-center ">Arrive & Thrive Guarantee™ </h2>
             <p class="text-lg text-center w-3/5 flex mx-auto">What good is getting your landscape in the mail if your plants
                 show up dead? We’ve got to admit, sending a

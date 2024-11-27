@@ -2,9 +2,9 @@ import React from 'react';
 
 const WhyUs = () => {
     return (
-        <section class="container mx-auto py-12">
+        <section class="container mx-auto lg:py-12 py-6" >
             <h2 class="text-3xl font-semibold text-center">Why Us ?</h2>
-            <div className="lg:mx-12 mx-3">
+            <div className="lg:mx-12 mx-2">
                 <h3 className='text-5xl font-semibold my-5'>Plant Care, The Finishing Touch Way!</h3>
                 <p className='text-xl'>Why must you believe us as the best landscape consultant</p>
 

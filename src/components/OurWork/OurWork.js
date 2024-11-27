@@ -21,10 +21,10 @@ const OurWork = () => {
     };
 
     return (
-        <section className="container mx-auto py-12">
-            <h2 className="text-3xl font-semibold text-center my-5">Our Works</h2>
-            <div className="lg:mx-12 mx-3">
-                <div className="gallery">
+        <section className="container mx-auto lg:py-12 py-6">
+            <h2 className="text-3xl font-semibold text-center lg:my-5 my-3">Our Works</h2>
+            <div className="lg:mx-12 mx-2 ">
+                <div className="gallery ">
                     {projects.map((project) => (
                         <div key={project.id} onClick={() => handleImageClick(project.slug)} className="cursor-pointer mb-4">
                             <img src={project.images[0]} alt={`Project ${project.id}`} />

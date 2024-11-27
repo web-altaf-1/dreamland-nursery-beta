@@ -1,3 +1,4 @@
+import MobileBottomHeader from "@/components/Shared/MobileBottomHeader";
 import "./globals.css";
 
 
@@ -14,6 +15,8 @@ export default function RootLayout({ children }) {
 
       >
         {children}
+
+        <MobileBottomHeader ></MobileBottomHeader>
       </body>
     </html>
   );

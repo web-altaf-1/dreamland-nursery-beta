@@ -1,6 +1,7 @@
 
 'use client'
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 
 const MobileBottomHeader = () => {
@@ -10,6 +11,15 @@ const MobileBottomHeader = () => {
     const cartModalRef = useRef(null);
     const buttonRef = useRef(null);
     const menuRef = useRef(null);
+    const router = useRouter();
+
+
+    const handleClickLink = (url) => {
+        setShowCategoryPage(false)
+        router.push(url);
+
+    }
+
 
     useEffect(() => {
         const handleClickOutsideCart = (event) => {
@@ -185,34 +195,34 @@ const MobileBottomHeader = () => {
                                 </h2>
                                 <div className='px-4'>
                                     <div className='my-3'>
-                                        <Link lang='bn' className='mb-8' href='/'>
+                                        <p onClick={() => handleClickLink('/')} lang='bn' className=''>
                                             Home
-                                        </Link>
+                                        </p>
                                     </div>
                                     <div className='my-3'>
-                                        <Link lang='bn' className='mb-8' href='/about-us'>
+                                        <p onClick={() => handleClickLink('/about-us')} lang='bn' className=''>
                                             About Us
-                                        </Link>
+                                        </p>
                                     </div>
                                     <div className='my-3'>
-                                        <Link lang='bn' className='mb-8' href='/contact-us'>
+                                        <p onClick={() => handleClickLink('/contact-us')} lang='bn' className='' >
                                             Contact Us
-                                        </Link>
+                                        </p>
                                     </div>
                                     <div className='my-3'>
-                                        <Link lang='bn' className='mb-8' href='/why-us'>
+                                        <p onClick={() => handleClickLink('/why-us')} lang='bn' className=''>
                                             Why Us
-                                        </Link>
+                                        </p>
                                     </div>
                                     <div className='my-3'>
-                                        <Link lang='bn' className='mb-8' href='/our-works'>
+                                        <p onClick={() => handleClickLink('/our-works')} lang='bn' className='' >
                                             Our Works
-                                        </Link>
+                                        </p>
                                     </div>
                                     <div className='my-3'>
-                                        <Link lang='bn' className='mb-8' href='/all-products'>
+                                        <p onClick={() => handleClickLink('/all-products')} lang='bn' className='' >
                                             Our Shop
-                                        </Link>
+                                        </p>
                                     </div>
 
 

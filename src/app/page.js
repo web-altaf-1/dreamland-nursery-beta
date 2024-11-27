@@ -8,7 +8,6 @@ import PopularProducts from "@/components/PopularProducts/PopularProducts";
 import QuestionSection from "@/components/QuestionSection";
 import Footer from "@/components/Shared/Footer/Footer";
 import Header from "@/components/Shared/Header/Header";
-import MobileBottomHeader from "@/components/Shared/MobileBottomHeader";
 import WhyUs from "@/components/WhyUs/WhyUs";
 
 
@@ -27,7 +26,6 @@ export default function Home() {
       <MapSection></MapSection>
       {/* <DiscountProducts isHomePage={true}></DiscountProducts> */}
       <Footer></Footer>
-      <MobileBottomHeader ></MobileBottomHeader>?
     </div>
   );
 }
